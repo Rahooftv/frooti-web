@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/jpeg;base64,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">
+
+  <title> PARLE AGRO | Frooti</title>
+</head>
+
+<body>
+  <!-- heading -->
+  <header>
+    <div class="row ">
+      <div class="col-lg-6 col-9 pt-4 ps-5">
+        <img src="https://www.parleagro.com/dist/img/logo.png" style="width: 120px;">
+
+      </div>
+      <div class="col-lg-6 col-3 pt-1 d-flex justify-content-end ">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid ">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class=" navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="#"> Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Brand</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">News Room</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Sustainability</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+
+    </div>
+
+  </header>
+  <!-- section-1 image -->
+  <section>
+    <div>
+      <div class="image">
+        <img src="https://www.parleagro.com/uploads/images/063929FROOTI_Digital_2024_PAPL-WEB_1.jpg " width="100%">
+
+      </div>
+
+
+    </div>
+  </section>
+  <section>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-6 col-md-12 text-center d-flex justify-content-center bg-color no-padd right " id="box">
+                  <div class="leaf-img ">
+                    <img class="img-responsive d-flex align-items-center "
+                      src="https://www.parleagro.com/uploads/images/0345263FA8DB.png" alt="leaf">
+          
+                  </div>
+          
+                  <h1 class="text-white-one "><strong>Live The Frooti <br> Life</strong> </h1>
+          
+                </div>
+          <!-- left-part-end -->
+              <div class="col-xl-6 col-md-12 left p-5 px-6">
+                
+                  <p>The love story between Frooti and India began in 1985. Today, Frooti rules the hearts of millions of mango lovers around the world. Just a swig of the rich and juicy Frooti is akin to the joyful experience of slurping on the real king of fruits. Made with real mango pulp from the freshest of mangoes, Frooti satisfies the craving for this popular seasonal fruit throughout the year. It’s juicy and flavourful mango taste not just rejuvenates the taste buds, but is the perfect thirst-quencher that refreshes you in no time.</p>
+                  
+                  <p>Led by innovation, Frooti is the first drink to disrupt the beverage market in India with many “firsts”. Frooti was the first brand to be introduced in Tetra Pak in India, pioneering the concept of ‘on-the-go’. It was the first brand to unveil the PET bottle and TCA Tetra Pak as well. With these unique innovations in packaging, Parle Agro kept India’s popular mango drink fresh and accessible to consumers across India.</p>
+                  
+                  <p>Frooti available in 65ml, 125ml, and 200ml Carton Pack and also in PET bottles of 125ml, 250ml, 300ml, 600ml, 1.2Ltr, and 1.8Ltr PET.</p>
+                  
+                  <img class="image-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACHUlEQVRYhcXXv2sUQRQH8I/rGSKeCdgrmlwVhWijaKcgAX+AIgQrQf8ILW0TsEhhIWpaUWwVAqKNhWVMLGz8hY2JImhMYhKFWMweXJa9zY6bS74wsHMz7/u+++bdm7fblMdunMVJDKIPvenaT3zAFF7gKeYjuAvRwL2UcLXkmE9tGlUcd2MEyxGOs2MFt1KuKDQwWcFxdkyhv6zzw5jZQOfNMSPkTiH68aUDzltFtI1EN1530HnrceTmxGhF4gWM4xouYhhXMZGzdyTrvKFatk9hX5vI3szZvyw9iiTddANdbQjWwyLO43OETVfqE6HCxRSZ7Bhfx1leBFbxC/WaUF53RajP4mVmPoBHOCBEuNbGro4zNaG2V8G3zPwKDpW0PZUIhacK/mbm9QjbwUQI1Vahr4aeSKPvuN8y/5hZf2btVXwOB9tw9cKSuKx/Gyn4eQHXcoK5SMJY7C9Y+5EInUynsB17C9Y/1YQyeiyCdA+ut8wfW5sHp3Ekfe7BjgKuSbis2iU0lCG9HWE7nOCJDWwgI7CIiSR1/nALBDzAXPM2HBUayM3CirQnaAp4h7FNFDCG99kf/7cli03Caexsbk5aDJdwCbPVXq4QX3EBv/MEEMIy1CERs0KNWFP4sgIIhemEcBwbhTcp53R2IU8AQeVx1f8df1KOoyqU/H7c1b5vzEvCBeHjtPTnWBnUhV7/Dl4JZ7qUI2BAaHRL4R/BY0kqFxbSOAAAAABJRU5ErkJggg==" alt="facebook logo">
+                  <img class="image-logo"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAAC10lEQVRYhb3XzW/URRgH8M8ua4OyWDwgPTWxXS9e8GKoR8FogulVL2oiGoP+I9LgWZMSJIGTxpNEEw/itYaDloTEg3LwYKuQlJcaYFtfDvP8kuHHb/bFbvkmk9l93p/5PfPMTMvo2I/X8BIOYw7TwbuFa1jFJXyNzTFsD0QPZ8LgvyOOzdDp7cTxXpzC/TEc10cfH4etsdDDjztwXB+rmB/V+fNYn6DzaqxLtTMQ81jbBed5EA+sRCv7vRcrQ6K8jRvYwjb+CXobHTyGg9KOKeEKjuBenbFUiLofvHEquhc6/YLNU5VgK1O4iqmaoS0s4lvM4hhmMrmquqts+tIyf4ff8AouNtjt4zn8WhHOFCJdCv7JAdmUVu1k6JZWdrlyvh93CkK9yHxU5xt4Bi+HzmzYKDWrbkdqr10P4zZ+wTtSceXYwFn8EP+P4D3clT5BK3SO4VwkWC/MfTjekXp7E67HPFOjX5bq4o8ssC+ljndR+q5P1HT/bAgAjralxtOE7Zjz7G+G879wQVrGTZwP2qJUmNM13W3NONyWvtmgAPZktLNS5p/iTam6p/AWPgneZ5l8pVsKYK6NJ4cE0MloK1JWrzfIvxGyKxmt0i0FMN0uMB4Z2lK1N6Ep+gWpOX3RIP95yC5ktKZVzHGrLd1kBgXwd0Z7F4fwgVSE/RgX8GHwTmTylW4pgGtt6axuQlXBWxntgLTV9uHtmLvxuxu8pzL5SrcUwGoH3+P9BubBmNdr9Bfws7QjVqSmsyBlfqAmuxbz04UALonIJ9WK6+fBLJ4t8DdlHXg3D6PTBZlldn4cPx7z3Zjrx/Gr+KrB7kPHMZO/kJxWXrWPKsFxr2R3pEOqL22xapvtiTFl+JXsJ7yo4UrGo7mUzg0IDmkFft8l50Ov5RXmTP5hMjTzOib1NFvyP55mOealPTvu43TZCM+x1jCBDF0cx1EPPs9b0k0pf55/Y8Tn+X+hIbenmjwOhwAAAABJRU5ErkJggg==" alt="intagram logo">
+                  <img class="image-logo"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACMklEQVRYhb3XzUsVYRQG8N81CiklIsJoU+htE5FRELSIqGXSMmsbRH9KaQQJtTDdtMh/IDJoE0GLIghzEbQo+6APjYIiFyqSLWamxuHOO++9V33gbGbO+zzn/TrvOTXx6MYATqEfvdie/vuFGUzjESYx3wR3EHWMp4QrkTafjqm3I9yJISw2IVy0JVxPuZpCHVNtCBdtGn2x4ocxu4bimc1Kzk4Qffi6DuL5IEpXohMv11E8vx0Nz8S1DRDPbKgoXtfeac9O/Htx13VRYSvGA86vK8j+YAQ7Uq4tuITPuIv7JePGMvHuiqj34Vbg/2hxOXM4gedYbjDuN7rgQsXsNqdklyUpt+izNxBAN+4E+AfhdsBhBUdyhD24go/+73sINyq4R+FZxQrcQ60B+X6cxaZAAJMVATyFbwGHZRyVnINWUJVX5mChwmmgRfFtki0KcS/EBPAGe1oI4FwF778AQluQ2UMRD0kBjyN45zoklUwVfkhyeCwGcDLCb4bqa5jZiDRxVKAHnyI5R+F8pPMK3uFgQHwnXjTBNyidVVkq/oAnmMBFbA2IH5Mc2FjxebkVLXuMFnATh0pEazgueXQa5fuQjWUEJM/xK8lLVoYvkjrxOzqwW1K+7QqMKcMSDuBt/uNwkzNox642imqjSrIpgTJ9I4rS3jLxDP2S/V4P8ehs2mvtG5PKmRexVq3ZsBZaszz6JHe22eZ0TEQ71qjSKUMXzuC01e15DT+tbs8fiGzP/wLH8l4k0dpsPgAAAABJRU5ErkJggg==" alt="twitter logo">
+              
+                 <img src="https://demo.netcommlabs.net/Parle-Agro/uploads/images/youtube.png" alt="" class="image-logo">
+                </div>
+            </div>
+          </div>
+
+        </section>
+
+  <!-- section-3 -->
+  <section>
+    <div>
+      <div class="image img-fluid">
+        <img src="https://www.parleagro.com/uploads/images/093629FROOTI_Pack_Digital_1920x1080_2023.jpg" width="100%">
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="footer" style="background-color: white; height: 100px;">
+      <div class="container-fluid">
+        <div class="row" style="height: 260px; padding: 30px;font-size: 14px;">
+          <div class="col-lg-4">
+            <p>Corporate Head Office<br>
+              Parle Agro Pvt. Ltd.,<br>
+              off Western Express Highway,<br>
+              Sahar-Chakala Road, Parsiwada,
+              Andheri (E), Mumbai 400 099.</p>
+
+            <p>2019, Parle Agro© All rights reserved</p>
+          </div>
+          <div class="col-lg-4">
+            <p>If you have a particular query, please select the concerned department:</p>
+            <p><strong>Exports: exports@parleagro.com</strong></p>
+            <p><strong>Preforms: preforms@parleagro.com</strong></p>
+            <p><strong>Consumer Cell: consumercell@parleagro.com</strong></p>
+            <p><strong>Media Queries: corpcomm@parleagro.com</strong></p>
+
+          </div>
+          <div class="col-lg-4">
+            <p>Our Policy:<strong>Vigil Mechanism Policy</strong></p>
+            <p><strong>Annual Return</strong></p>
+            <p>Get in touch:<br>
+              T: 022 - 6734 8000<br>
+              E: <strong>info@parleagro.com</strong></p>
+            <p>Follow us : Instagram, Twitter and Linkedin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ </body>
+ </html>
